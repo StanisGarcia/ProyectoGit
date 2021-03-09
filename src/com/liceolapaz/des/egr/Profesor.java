@@ -1,12 +1,15 @@
 package com.liceolapaz.des.egr;
 
-public class Profesor {
+public class Profesor extends Persona {
 	private double salario;
 	private String especialidad;
 	private String asignatura;
 	
-	public Profesor() {
-		
+	public Profesor(String nombre, int edad, double salario, String especialidad, String asignatura) {
+		super(nombre, edad);
+		this.salario = salario;
+		this.asignatura = asignatura;
+		this.especialidad = especialidad;
 	}
 
 	public double getSalario() {
