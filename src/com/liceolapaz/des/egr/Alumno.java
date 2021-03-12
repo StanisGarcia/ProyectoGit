@@ -29,5 +29,11 @@ public class Alumno extends Persona {
 		return "Alumno [matricula=" + matricula + ", curso=" + curso + "]";
 	}
 	
-	
+	public boolean comprobarEdad() {
+		if(this.getEdad() >= 18) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }
